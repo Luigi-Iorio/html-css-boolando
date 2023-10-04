@@ -9,7 +9,50 @@ body {
   font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* COMMON */
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* HEADER */
+header {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 99;
+  background-color: #ff6900;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  display: block;
+}
+
 /* MAIN */
+main {
+  padding-top: 120px;
+}
+
 .cont {
   max-width: 1280px;
   margin: 0 auto;
