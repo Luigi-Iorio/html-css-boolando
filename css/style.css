@@ -19,6 +19,11 @@ a {
 }
 
 /* COMMON */
+.cont {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -41,7 +46,7 @@ nav {
   height: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -55,18 +60,15 @@ main {
   padding-top: 120px;
 }
 
-.cont {
-  max-width: 1280px;
-  margin: 0 auto;
+.products {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .card {
-  width: calc(100% / 3 - 20px);
+  width: calc((100% - 40px) / 3);
 }
 
 /* top */
@@ -163,12 +165,16 @@ h5 {
 footer {
   background-color: black;
   color: white;
+
+  margin-top: 60px;
+}
+
+.footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 30px 0;
-  margin-top: 60px;
 }
 
 .left,
